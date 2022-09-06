@@ -1,0 +1,1 @@
+O arquivo da página principal se chama "Pagina inicial-Bruno.html". Abra-o para ver o site principal e as páginas adjacentes, que podem ser vistas através do menu em dropdown.

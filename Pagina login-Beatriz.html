@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Pagina estilo-Beatriz.css">
+    <link rel="icon" href="Imagens/logotipo telecall 1.png">
+    <title>Login</title>
+</head>
+<body>
+    
+    <script>
+        function darkmode() {
+        var element = document.body;
+        element.classList.toggle("dark-mode");
+        }
+        function Valida(){
+        acessolog=["BRUNO", "SAMUEL", "BEATRIZ", "LORENA"];
+	    acessosen=[1234,5678,78910];
+	
+	    senha = document.getElementById('senha').value;
+        for(i=0;i<acessolog.length;i++) {
+            if (document.getElementById('user').value==acessolog[i]){
+                if (document.getElementById('senha').value==acessosen[i]){
+                    window.location.replace("pagina.html");
+                    break;
+                }
+            }
+        }
+        if (i==acessolog.length){
+            alert('Login e/ou senha incorretos')
+        }
+        if (document.getElementById('user').value == "") {
+                alert('Preencha o campo Login!')
+                document.getElementById('login').focus()
+        }
+        if (document.getElementById('senha').value == "") {
+                alert('Preencha o campo senha!')
+                document.getElementById('senha').focus()
+        }
+    }
+    </script>
+    <div class="main-login">
+        <div class="left-login">
+            <h1>Área do cliente <br>Faça login e acesse a sua conta!</h1>
+            <img src="Imagens/logo tela de login.svg" class="left-login-image" alt="cliente segurando tablet">
+            
+        </div>
+        <div class="right-login">
+            <div class="card-login">
+                <img src="Imagens/logotipo telecall 2.png" alt="logotipo da telecall">
+                <div class="textfield">
+                    <label for="usuario" >Usuário</label>
+                    <input type="text" name="usuario" placeholder="Usuário" id="user">
+                </div>
+                <div class="textfield">
+                    <label for="senha" >Senha</label>
+                    <input type="password" name="Senha" placeholder="Senha" id="senha">
+                    <a href="#" id="esqueceu-senha">Esqueceu a senha? </a>
+                    <a href="Pagina cadastro-Lorena.html" id="cadastre-se">Ou Cadastre-se!</a>
+
+                </div>
+                <button type="button" class="btn-login" onclick="Valida()">Login </button>
+                <button onclick="darkmode()" type="button" class="button-dm">Dark Mode</button>
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>

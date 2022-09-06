@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*************************************** Header ************************************/
+.navbar-nav {
+    margin-left: 50%;
+}
+
+.navbar-brand {
+    margin-left: 15%;
+}
+
+.navbar {
+    background-image: linear-gradient(rgb(143, 18, 18), rgb(223, 7, 7));
+}
+
+.dropdown-menu {
+    background-image: linear-gradient(rgb(143, 18, 18), rgb(223, 7, 7));
+}
+
+.navbar-toggler {
+    background-color: white;
+    color: rgb(17, 85, 141);
+}
+/*************************************** Landing Page ************************************/
+.landing-page {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 30px;
+}
+
+
+#titulo-google {
+    font-size: 50px;
+    color: rgb(58, 110, 170);
+}
+
+#titulo-sn {
+    font-size: 40px;
+    color: rgb(58, 110, 170);
+    max-width: 100%;
+}
+
+#paragrago1 {
+    font-size: 20px;
+    max-width: 100%;
+}
+
+#about-us {
+    margin-left: 30px;
+    margin-top: 150px;
+}
+
+#img-sobre-nos {
+max-width: 100%;
+width: 90%;
+}
+
+@media (max-width: 900px) {
+    .landing-page {
+        grid-template-columns: 1fr;
+    }
+
+}
+/*************************************** Cards ************************************/
+.card {
+    position: relative;
+    padding: 10px;
+    width: 300px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 20px;
+    transition: 0.5s;
+    text-align: center;
+   
+}
+
+
+.card .img {
+    transition: 1.5;
+}
+
+.card h1 {
+    font-size: 2rem;
+}
+
+.card .content {
+    padding: 20px;
+    text-align: center;
+}
+
+.card .content p {
+    color: rgb(2, 93, 167);
+    transition: 0.5;
+}
+
+.card .content a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 40px;
+    text-decoration: none;
+    transition: 0.5s;
+    outline: none;
+    margin-top: 20px;
+}
+
+.card:hover {
+    background-image: linear-gradient(#aa1616, rgb(255, 0, 0));
+    color: rgb(255, 255, 255);
+    box-shadow: 2px 20px 25px rgb(0, 0, 0);
+    border-color: linear-gradient(#aa1616, rgb(255, 0, 0));
+}
+
+.img-card {
+    width: 100px;
+    margin-left: 75px;
+    margin-bottom: 15px;
+}
+
+.container-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card-card {
+    padding: 30px;
+}
+
+#servicos-titulo {
+    text-align: center;
+    margin-top: 20px;
+    color: rgb(16, 94, 139);
+}
+/*************************************** Benefícios ************************************/
+.second-title-ben{
+    font-size: 25px;
+    color: rgb(58, 110, 170);
+}
+/*************************************** Usos ************************************/
+.product4 {
+    margin-top: 60px;
+}
+/*************************************** Footer ************************************/
+footer {
+    background: rgb(29, 29, 29);
+    height: auto;
+    width: 100vw;
+    color: white;
+    padding: 40px;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content h3 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+
+.footer-content p {
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+
+.socials {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+
+.socials li{
+    margin: 0 10px;
+}
+
+.socials a{
+    text-decoration: none;
+}
+
+.social-img {
+    width: 30px;
+}
+
+.footer-bottom {
+    background: rgb(15, 15, 15);
+    
+    padding: 5px 3px;
+    text-align: center;
+}
+ .footer-bottom p {
+     font-size: 14px;
+     word-spacing: 2px;
+ }
+ 
+ #img-copyright {
+     width: 15px;
+     
+ }
+ .dark-mode {
+    background-color: black;
+    color: white;
+  }
+  .header-top {
+    background-color: #4b5357;
+    height: 30px;
+}
+/*Links do header - Início*/
+.link {
+    margin-left: 10vw;
+    background-color: black;
+    height: 4.5vh;
+    width: 6vw;
+}
+.link-wholesale {
+    margin-left: 1vw;
+}
+button {
+    cursor: pointer;
+    background: transparent;
+    color: white;
+    border: none;
+    text-align: center;
+}
+.link-faq {
+    margin-left: 30vw;
+}
+.link-inst {
+    margin-left: 1.5vw; /*Antes 30px*/
+}
+.link-car {
+    margin-left: 1.5vw; /*Antes 30px*/
+}
+.link-aten {
+    margin-left: 1.5vw; /*Antes 30px*/
+    
+}
+.descricao {
+    color: black;
+}
+h4 a:active, h4 a:link, h4:visited {
+    color: black;
+}
+.button-dm {
+    margin-left: 2vw;
+}
